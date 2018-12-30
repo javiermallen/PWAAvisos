@@ -1,0 +1,18 @@
+<template>
+  <div class="inicio">
+    <img class="img-fluid" alt="Fuentes de ebro"        src="../assets/FuentesdeEbroescudo.svg">
+      <HelloWorld msg="Bienvenidos a la aplicación de avisos de Fuentes de Ebro"/>
+  </div>
+</template>
+
+<script>
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
+
+export default {
+  name: 'inicio',
+  components: {
+    HelloWorld
+  }
+}
+</script>
