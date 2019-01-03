@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <router-view/>
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Inicio</router-link> |
       <router-link to="/nosotros">Nosotros</router-link>
       <router-link to="/Bandos">Bandos</router-link>
-    </div>
+    </div> -->
     
   </div>
 </template>
@@ -17,6 +17,6 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 </style>
