@@ -4,22 +4,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="tex-center">Últimos bandos</h2>
-
-                    <bandos-alerta />
+                    <h2>Últimas noticias</h2>
+                    <noticias-card />
                 </div>
             </div>
         </div>
     </div>
 </template>
-
 <script>
-import Bandosalerta from '@/components/Bandosalerta.vue'
+import Noticiascard from '@/components/Noticiascard.vue'
 import Navatras from '@/components/Navatras.vue'
+
 export default {
-    name: 'Bando',
+    name: 'Noticias',
     components: {
-        'bandos-alerta': Bandosalerta,
+        'noticias-card': Noticiascard,
         'nav-atras': Navatras
     }
 }
@@ -27,7 +26,6 @@ export default {
 
 <style>
     .contenedor {
-        padding-top: 4rem;
-    }
-    
+            padding-top: 4rem;
+        }
 </style>

@@ -17,7 +17,7 @@
           <h3>Noticias</h3>
         </div>
       </div>     
-       <div class="row justify-content-around">
+       <div class="row justify-content-around mb-3">
         <div class="col-5 col-lg-4 enlace enlace-incidencias d-flex justify-content-between align-items-center"
               @click="irIncidencias">
           <img class="img-fluid" src="@/assets/incidencias.svg" alt="">
@@ -29,11 +29,10 @@
           <h3>Información</h3>
         </div>
       </div>
-        <div class="row justify-content-around">
-          <div class="col-5 col-lg-4 enlace enlace-nosotros d-flex justify-content-between align-items-center"
-              @click="irNosotros">
-            <img class="img-fluid" src="@/assets/nosotros.svg" alt="">
-            <h3>Nosotros</h3>
+        <div class="row justify-content-around flex-column">
+          <p class="text-center">PWA desarrollada por el taller de empleo "Turismo Sostenible e Innovación" de Fuentes de Ebro</p>
+        <div class="imagen">
+          <img src="@/assets/Logos.png" class="img-fluid" alt="Fuentes de Ebro">
         </div>
 
       </div>
@@ -56,7 +55,7 @@ export default {
       this.$router.push('/noticias')
     },
     irIncidencias (){
-      this.$router.push('/inciencias')
+      this.$router.push('/incidencias')
     },
     irInformacion (){
       this.$router.push('/informacion')
@@ -97,5 +96,13 @@ export default {
 }
 a {
   color: #42b983;
+}
+@media (max-width: 575px) {
+  h3 {
+    font-size: 1.25rem;
+  }
+  img {
+    width: 20%;
+  }
 }
 </style>

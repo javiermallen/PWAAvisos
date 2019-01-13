@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Inicio from './views/Inicio.vue'
-import Nosotros from './views/Nosotros.vue'
 import Bando from './views/Bando.vue'
-import Avisos from './views/Avisos.vue'
+import Incidencias from './views/Incidencias.vue'
 import Informacion from './views/Informacion.vue'
+import Noticias from './views/Noticias.vue'
+
 
 
 Vue.use(Router)
@@ -22,9 +23,9 @@ export default new Router({
       component: Bando
     },
     {
-      path: '/avisos',
-      name: 'avisos',
-      component: Avisos,
+      path: '/incidencias',
+      name: 'incidencias',
+      component: Incidencias,
     },
     {
       path: '/informacion',
@@ -32,10 +33,9 @@ export default new Router({
       component: Informacion
     },
     {
-      path: '/nosotros',
-      name: 'nosotros',
-      component: Nosotros
+      path: '/noticias',
+      name: 'noticias',
+      component: Noticias
     }
-    
   ]
 })
